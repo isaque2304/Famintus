@@ -1,6 +1,21 @@
-// This file is required by the index.html file and will
-// be executed in the renderer process for that window.
-// No Node.js APIs are available in this process because
-// `nodeIntegration` is turned off. Use `preload.js` to
-// selectively enable features needed in the rendering
-// process.
+
+
+$('#home').click(function () {
+    console.log("redirecionar");
+    window.open('index.html');
+});
+
+$('#cadastrou').click(function () {
+    console.log("redirecionar");
+    window.open('cadastrou.html');
+});
+
+$('#produtos').click(function () {
+    console.log("redirecionar");
+    window.open('produtos.html');
+});
+
+$('#cadastrop').click(function () {
+    console.log("redirecionar");
+    window.open('cadastrop.html');
+})

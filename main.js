@@ -2,12 +2,15 @@
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
 
+
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: __dirname + "/ZI.png", 
     webPreferences: {
+      nodeIntegration: true,
       preload: path.join(__dirname, 'preload.js')
     }
   })
@@ -16,7 +19,7 @@ function createWindow () {
   mainWindow.loadFile('index.html')
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
@@ -36,6 +39,6 @@ app.on('activate', function () {
   // dock icon is clicked and there are no other windows open.
   if (BrowserWindow.getAllWindows().length === 0) createWindow()
 })
-
+app.allowRendererProcessReuse = true
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.

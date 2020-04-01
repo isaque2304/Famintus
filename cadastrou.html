@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Famintus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <ul>
+        <li><a id="home" href="index.html">Home</a></li>
+        <li><a id="cadastrou" class="active" href="cadastrou.html">Cadastro de usuários</a></li>
+        <li><a id="cadastrop" href="cadastrop.html">Cadastro de produtos</a></li>
+        <li><a id="produtos" href="produtos.html">Produtos</a></li>
+    </ul>
+
+    <div>
+        <h1>Cadastro de Usuários</h1>
+        <form id="cadastro-clientes">
+            <label>Nome</label>
+            <input type="text" id="nome" placeholder="Nome...">
+
+            <label>Nome de usuário</label>
+            <input type="text" id="nomeu" placeholder="Nome de usuário...">
+
+            <label>Senha</label>
+            <input type="text" id="senha" placeholder="Senha...">
+        
+            <label>E-mail</label>
+            <input type="text" id="email" placeholder="E-mail...">
+
+            <label>Telefone/Celular</label>
+            <input type="text" id="telefone" placeholder="Telefone...">
+
+            <label>Endereço</label>
+            <input type="text" id="endereco" placeholder="Endereço...">
+        
+            <label>Cidade</label>
+            <select id="cidade">
+                <option value="Vargem Grande Paulista">Vargem Grande Paulista</option>
+                <option value="Cotia">Cotia</option>
+                <option value="Caucaia">Caucaia</option>
+            </select>
+        
+            <button id="salvar" type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="./renderer.js"></script>
+</body>
+
+</html>
