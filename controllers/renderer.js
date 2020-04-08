@@ -1,6 +1,4 @@
-
-
-$('#home').click(function () {
+/*$('#home').click(function () {
     console.log("redirecionar");
     window.open('index.html');
 });
@@ -18,4 +16,4 @@ $('#produtos').click(function () {
 $('#cadastrop').click(function () {
     console.log("redirecionar");
     window.open('cadastrop.html');
-})
+})*/

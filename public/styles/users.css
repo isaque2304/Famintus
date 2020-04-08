@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    margin-top: 10px;
+    background-color: #2F195F;
+    height: 680px;
+    width: 250px;
+}
+
+.nav-bar a{
+    margin-top: 10px;
+    display: block;
+    height: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #ffae00;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.nav-bar a:hover{
+    background-color: #0F1020;
+}

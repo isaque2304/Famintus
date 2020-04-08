@@ -4,6 +4,7 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
+    "electron:serve": "wait-on http-get://localhost:4200/ && npm run electron:tsc && nodemon --watch ./main.ts --exec \"npm run electron:tsc && electron . \"",
     "start": "electron ."
   },
   "repository": "https://github.com/electron/electron-quick-start",
@@ -22,6 +23,7 @@
   "dependencies": {
     "connect-loki": "^1.1.0",
     "express-session": "^1.17.0",
+    "nodemon": "^2.0.2",
     "read-file-utf8": "^2.0.2",
     "sqlite3": "https://github.com/mapbox/node-sqlite3/tarball/master"
   }

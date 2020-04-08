@@ -6,20 +6,21 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Famintus</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../public/styles/cadastro_usuarios.css">
 </head>
 
 <body>
-    <ul>
-        <li><a id="home" href="index.html">Home</a></li>
-        <li><a id="cadastrou" class="active" href="cadastrou.html">Cadastro de usuários</a></li>
-        <li><a id="cadastrop" href="cadastrop.html">Cadastro de produtos</a></li>
-        <li><a id="produtos" href="produtos.html">Produtos</a></li>
-    </ul>
+    <div class="nav-bar">
+        <a id="home" class="active" href="../index/index.html">Home</a>
+        <a id="cadastrou" href="../cadastro_usuario/cadastro_usuario.html">Cadastro de usuários</a>
+        <a id="cadastrop" href="../cadastro_produtos/cadastro_produtos.html">Cadastro de produtos</a>
+        <a id="produtos" href="../produtos/produtos.html">Produtos</a>
+        <a id="usuarios"  class="active" href="../usuarios/usuarios.html">Usuários</a>
+    </div>
 
     <div>
         <h1>Cadastro de Usuários</h1>
-        <form id="cadastro-clientes">
+        <form id="cadastro-clientes" method="POST">
             <label>Nome</label>
             <input type="text" id="nome" placeholder="Nome...">
 
@@ -49,7 +50,7 @@
         </form>
     </div>
 
-    <script src="./renderer.js"></script>
+    <script src="renderer.js"></script>
 </body>
 
 </html>
